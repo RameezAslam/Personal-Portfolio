@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    background-color:  rgb(34, 34, 34);
+}
+.first-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 6rem;
+    min-height: 80vh;
+}
+.first-section > div{
+    width: 40%;
+}
+.left-section {
+    font-size: 2.4rem;
+    font-weight: 700; 
+}
+.intro{
+    animation: movement 1.4s ease-in ;
+}
+.left-section .description{
+    font-weight: 500;
+}
+.glow-btn{
+    margin-top: 0.5rem;
+  font-size: 1.2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: black;
+  background-color: rgb(79, 175, 175);
+  border: 2px solid #00FFFF;
+  border-radius: 14px;
+  padding: 4px 8px;
+  cursor: pointer;
+  box-shadow: 0 0 5px #00FFFF, 0 0 8px #00FFFF, 0 0 12px #0088FF;
+}
+.glow-btn:hover{
+    box-shadow: 0 0 7px #00FFFF, 0 0 15px #00FFFF, 0 0 20px #0088FF;
+    background-color: rgba(0, 255, 255, 0.2);
+}
+.logo-social {
+    display: flex;
+    justify-content: center;
+    height: 3.4rem; 
+    width: 10rem; 
+    border: 2px solid aqua;
+    box-shadow: 0 0 12px aqua , 0 0 18px rgb(3, 90, 90);
+    padding: 0.5rem 1rem;
+    margin-top: 2rem;
+    border-radius: 12px;
+    gap: 0.8rem; 
+}
+.logo-social .social-img img {
+    width: 3rem;
+    height: 3rem; 
+    border-radius: 50%;
+    object-fit: contain;
+}
+.logo-social .social-img img:hover{
+    transform: translateY(2px);
+}
+.right-section{
+    margin: 2rem 0rem;
+}
+.profile-container {
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 0.8rem; 
+    background: radial-gradient(circle, rgba(1, 255, 255, 0.6) 10%, transparent 70%);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.8), 
+                0 0 50px rgba(0, 255, 255, 0.6),
+                0 0 70px rgba(0, 255, 255, 0.4);
+    animation: bounce 3s 1s linear infinite;
+}
+.profile-pic {
+    width: 16rem; 
+    height: 17rem;
+    max-width: 100%; 
+    border-radius: 50%;
+    display: block;
+    border: 6px solid rgba(12, 228, 243, 0.6);
+}
+.aqua{
+    color: aqua;
+    font-weight: bold;
+}
+#element{
+    color: aqua;
+    font-weight: bold;
+}
+.description{
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    margin-top: 0.5rem;
+    overflow: hidden;
+    width: fit-content;
+}
+main hr{
+    border: 0;
+    background: rgb(110, 108, 108) ;
+    height: 2px;
+    margin: 30px 80px;
+}
+.second-section{
+  background-color: rgb(49, 47, 47);
+}
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.6rem;
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+}
+.logo img{
+    width: 2.4rem;
+    height: 3rem;
+    padding-right: 2rem;
+}
+.progress-container {
+    width: 50%;
+    background-color: #eee;
+    border-radius: 8px;
+    height: 1.4rem;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  }
+  .progress-bar {
+    height: 100%;
+    background-color: rgb(1, 136, 136);
+    transition: width 0.5s ease-in-out;
+  }
+  .third-section{
+    text-align: center;
+    background-color:rgb(49, 47, 47) ;
+  }
+  .projects-desc {
+    max-width: 100%; 
+    text-align: center;
+    line-height: 1.6; 
+    font-size: 1rem;
+    padding: 1rem 2rem;
+}
+.projects-grid-container{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    padding: 1rem 4rem;
+}
+.project-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem; 
+}
+.project-container{
+    height: 22rem;
+    max-width: 34rem;
+    position: relative;
+    overflow: hidden;
+    border: 16px solid rgb(87, 87, 87);
+    border-radius: 5%;
+}
+.projects-img{
+    height: 100%;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+.lower-section {
+    height: 2.8rem;
+    width: 80%;
+    background-color: rgb(51, 50, 50); 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    color: white;
+}
+.project-container:hover .projects-img {
+    transform: scale(1.1); 
+}
+.projects-explanation{
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 2rem 2rem;
+    padding: 1rem;
+}
+.fourth-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(49, 47, 47);
+}
+.heading {
+    margin-top: 3rem;
+    position: relative;
+    font-size: 2rem;
+    text-align: center;
+    opacity: 0; 
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+.first-span-aqua {
+    display: inline-block;
+    color: aqua;
+    font-weight: bold;
+    transform: translateX(-50px);
+    opacity: 0;
+    transition: transform 1s ease-out, opacity 1s ease-in;
+}
+.second-span-white {
+    display: inline-block;
+    transform: translateX(50px);
+    font-weight: bold;
+    opacity: 0;
+    transition: transform 1s ease-out, opacity 1s ease-in;
+}
+.heading.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.heading.show .first-span-aqua {
+    transform: translateX(0);
+    opacity: 1;
+}
+.heading.show .second-span-white {
+    transform: translateX(0);
+    opacity: 1;
+}
+.input-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 2rem;
+}
+.input-container input{
+    max-width: 20rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    padding: 1rem 3rem;
+    margin: 1rem;
+    border: 2px solid rgb(238, 235, 235);
+    border-radius: 0.5rem;
+}
+.input-container input:focus{
+    outline: none;
+    border: 3px solid aqua;
+}
+.input-container input:hover{
+    transform: translateY(-3px);
+}
+.submit-btn{
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(79, 175, 175);
+    border: 2px solid #00FFFF;
+    border-radius: 8px;
+    padding: 8px 14px;
+    cursor: pointer;
+    box-shadow: 0 0 6px #00FFFF, 0 0 12px #00FFFF, 0 0 16px #0088FF;
+    margin-bottom: 5rem;
+}
+.submit-btn:hover{
+    opacity: 0.5;
+}
+.contact-info{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 1rem;
+}
+.number , .email{
+    background-color: rgb(41, 41, 41);
+    padding: 1rem;
+    border: 1px solid rgb(48, 48, 48);
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}
+ .email img{
+    height: 2rem;
+    width: 2rem;
+}
+.number img{
+    height: 2rem;
+    width: 2rem;
+}
+
+

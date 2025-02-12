@@ -1,0 +1,51 @@
+@media (max-width: 1105px) {
+    .first-section {
+        flex-direction: column;
+    }
+    .first-section > div{
+        width: 80%;
+    }
+    .left-section{
+        margin: 3rem 0rem;
+    }
+}
+@media (max-width: 450px) {
+    .profile-pic{
+        width: 13rem;
+        height: 14rem;
+    }
+}
+@media (max-width: 965px) {
+    .projects-grid-container{
+        grid-template-columns: repeat(1,1fr);
+        gap: 0rem;
+        padding: 1rem 1rem;
+    }
+}
+@media (min-width: 1550px) {
+    .projects-grid-container{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .right ul {
+        display: none;
+    }
+    .menu-btn {
+        display: block;
+    }
+}
+@media (max-width: 915px) {
+    .input-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media (max-width: 750px) {
+    .contact-info{
+        grid-template-columns: repeat(1,1fr);
+        gap: 1rem;
+    }
+}
+
+

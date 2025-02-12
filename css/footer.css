@@ -1,0 +1,29 @@
+.footer{
+    background-color:  rgb(34, 34, 34);
+    padding: 2rem 2rem;
+}
+.flex-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: aqua;
+    font-weight: bold;
+}
+.flex-logos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ .flex-logos img{
+    height: 2.6rem;
+    width: 2.8rem;
+    border-radius: 2rem;
+    margin: 1rem 1rem;
+ }
+ .flex-logos img:hover{
+    transform: translateY(-2px);
+ }
+ .copyright-footer{
+    margin-top: 1rem;
+ }

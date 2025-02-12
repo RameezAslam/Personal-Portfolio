@@ -1,0 +1,102 @@
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 4rem;
+    background-color:  rgb(34, 34, 34);
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+   overflow: hidden;
+   top: 0;
+}
+.left {
+    font-size: 24px;
+    padding-left: 3rem;
+    font-weight: bold;
+    animation: movement 1s ease-in-out;
+  } 
+  .left::first-letter {
+    font-size: 3rem;
+    font-weight: bold;
+    color: aqua; 
+    font-family: "Courier New", monospace; 
+  }
+  .left span {
+    color: blue; 
+    font-style: italic;
+  }
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 5px 20px;
+    animation: animation-nav-li 8s ease;
+}
+.nav-link {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+.nav-link.active {
+    color: aqua; 
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: rgb(63, 62, 62);
+}
+.menu-btn {
+    display: none;
+    font-size: 2rem;
+    margin-left: auto;
+    margin-right: 3rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+}
+.offcanvas-menu {
+    position: fixed;
+    top: 0;
+    right: -250px; 
+    width: 250px;
+    height: 100%;
+    background-color:  rgb(34, 34, 34);
+    padding-top: 60px;
+    transition: 0.3s;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+.offcanvas-menu ul {
+    list-style: none;
+    padding: 0;
+}
+.offcanvas-menu ul li {
+    padding: 15px;
+}
+.offcanvas-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+}
+.offcanvas-menu ul li a:hover {
+    color: rgb(63, 62, 62);
+}
+.close-btn {
+    position: absolute;
+    top: 4rem;
+    right: 15px;
+    font-size: 2rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+}
+.offcanvas-menu.active {
+    right: 0;
+}
+
