@@ -61,8 +61,8 @@ nav ul li a:hover{
 .offcanvas-menu {
     position: fixed;
     top: 0;
-    right: -250px; 
-    width: 250px;
+    right: -16rem; 
+    width: 16rem;
     height: 100%;
     background-color:  rgb(34, 34, 34);
     padding-top: 60px;
@@ -89,7 +89,7 @@ nav ul li a:hover{
 .close-btn {
     position: absolute;
     top: 4rem;
-    right: 15px;
+    right: 2rem;
     font-size: 2rem;
     cursor: pointer;
     background: none;
